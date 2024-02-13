@@ -77,5 +77,41 @@ console.log(factorial(5)); // Output: 120
 
 // ---------------------------------------------------------------------------------------------------
 
+// Q5 - Write a function that takes an array of strings as input and returns a new array with the lengths of each string.
+
+const calculateLength = (arr) => {
+
+    for (i = 0; i < arr.length; i++) {
+
+        let length = arr[i].length;
+        console.log(`length of "${arr[i]}" is ${length}`);
+
+    }
+
+}
+
+let array = ['hello', 'how are you']
+calculateLength(array) // OUTPUT - length of "hello" is 5 , length of "how are you" is 11
+
+// ---------------------------------------------------------------------------------------------------
+
+// Q6 - Create a function that takes an array of numbers as input and returns the sum of all the numbers in the array.
+
+const sumOfArray = (arr) => {
+
+    let arrSum = 0;
+
+    for (i = 0; i < arr.length; i++) {
+        arrSum += arr[i];
+    }
+
+    return arrSum
+
+}
+sumArr = [1,2,4,5,6]
+console.log(`The sum of Array is ${sumOfArray(sumArr)}`);
+
+// ---------------------------------------------------------------------------------------------------
+
 
 
